@@ -2,6 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: eshope
+  namespace: argocd
 spec:
   project: default
   destination:
@@ -9,7 +10,7 @@ spec:
     server: https://kubernetes.default.svc
   source:
     path: K8S
-    repoURL: https://github.com/Sreev10/GKE-terraform.git
+    repoURL: https://github.com/Sreev10/GKE-Eshop.git
     targetRevision: main
   syncPolicy:
     automated: 

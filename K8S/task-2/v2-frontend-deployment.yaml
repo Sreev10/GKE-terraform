@@ -22,7 +22,7 @@ spec:
               app: frontend
       containers:
         - name: frontend
-          image: eshop/frontend:v1
+          image: nginx:alpine
           ports:
             - containerPort: 80
           env:

@@ -22,7 +22,7 @@ spec:
               app: backend
       containers:
         - name: backend
-          image: eshop/api:v1
+          image: mendhak/http-https-echo
           ports:
             - containerPort: 5000
           env:
